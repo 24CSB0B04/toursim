@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Nepal - Tourism Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header */
+        header {
+            background-color: #1a365d;
+            color: white;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .nav {
+            margin-top: 20px;
+        }
+        
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Hero */
+        .hero {
+            padding: 60px 0;
+            text-align: center;
+            background-color: #f0f4f8;
+        }
+        
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #e53e3e;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        .btn:hover {
+            background-color: #c53030;
+        }
+        
+        /* Destinations */
+        .destinations {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 28px;
+        }
+        
+        .destinations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .destination-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .destination-image {
+            height: 200px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .destination-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .destination-info {
+            padding: 20px;
+        }
+        
+        .destination-info h3 {
+            margin-top: 0;
+            color: #2d3748;
+        }
+        
+        /* About */
+        .about {
+            padding: 60px 0;
+            background-color: #f0f4f8;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .about-image {
+            height: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #1a365d;
+            color: white;
+            padding: 40px 0;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .footer-section h3 {
+            margin-top: 0;
+            border-bottom: 2px solid #e53e3e;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .nav a {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">Visit Nepal</div>
+            <div class="nav">
+                <a href="#">Home</a>
+                <a href="#destinations">Destinations</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Discover the Beauty of Nepal</h1>
+            <p>From the world's highest peaks to ancient temples and rich cultural heritage, Nepal offers unforgettable experiences for every traveler.</p>
+            <a href="#destinations" class="btn">Explore Destinations</a>
+        </div>
+    </section>
+    
+    <!-- Destinations Section -->
+    <section class="destinations" id="destinations">
+        <div class="container">
+            <h2 class="section-title">Top Destinations</h2>
+            <div class="destinations-grid">
+                <!-- Destination 1 -->
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="hd mounteverst.png" alt="Mount Everest">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Mount Everest</h3>
+                        <p>Experience the world's highest peak and trek through breathtaking landscapes of the Everest region.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Destination 2 -->
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="Kathmandu.png" alt="Kathmandu Valley">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Kathmandu Valley</h3>
+                        <p>Explore UNESCO World Heritage sites, ancient temples, and vibrant markets in Nepal's historic capital.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Destination 3 -->
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="Pokhara.png" alt="Pokhara">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Pokhara</h3>
+                        <p>Relax by serene Phewa Lake with stunning Annapurna mountain views and try adventure activities.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Destination 4 -->
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="muktinath.jpg" alt="Chitwan National Park">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Chitwan National Park</h3>
+                        <p>Discover Nepal's wildlife including rhinos and tigers in this UNESCO protected jungle sanctuary.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Nepal</h2>
+            <div class="about-content">
+                <div>
+                    <p>Nepal, nestled between India and Tibet, is a land of breathtaking natural beauty and rich cultural heritage. Home to eight of the world's ten tallest mountains, including Mount Everest, Nepal offers unparalleled trekking and mountaineering experiences.</p>
+                    <p>Beyond its majestic peaks, Nepal boasts ancient temples, medieval cities, and diverse wildlife. The warmth and hospitality of its people, representing over 100 ethnic groups, make every visitor feel welcome.</p>
+                    <p>From the bustling streets of Kathmandu to the serene lakes of Pokhara and the dense jungles of Chitwan, Nepal offers a journey of discovery for every traveler - whether you seek adventure, spiritual awakening, or cultural immersion.</p>
+                </div>
+                <div class="about-image">
+                    <img src="nepalbg.png" alt="Nepali Culture">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@visitnepal.com</p>
+                    <p>Phone: +977 1 4000000</p>
+                    <p>Address: Thamel, Kathmandu, Nepal</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#about">About Nepal</a></li>
+                        <li><a href="#">Travel Tips</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Plan Your Trip</h3>
+                    <ul>
+                        <li><a href="#">Best Time to Visit</a></li>
+                        <li><a href="#">Visa Information</a></li>
+                        <li><a href="#">Trekking Permits</a></li>
+                        <li><a href="#">Accommodation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Visit Nepal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
